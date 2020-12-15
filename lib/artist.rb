@@ -35,4 +35,10 @@ class Artist
   def self.find_or_create_by_name(name)
     self.find(name) || self.new(name)
   end
+
+  def self.print_songs
+    Song.all.select do |song|
+      song.artist == self
+    end
+  end
 end
