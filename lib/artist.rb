@@ -36,7 +36,7 @@ class Artist
     self.find(name) || self.new(name)
   end
 
-  def self.print_songs
+  def print_songs
     song.each do |song|
       puts song.name
     end
