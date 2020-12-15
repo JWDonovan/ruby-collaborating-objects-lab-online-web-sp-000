@@ -18,6 +18,7 @@ class Song
   end
 
   def new_by_filename(filename)
-
+    song = song_info["song"]
+    artist_name(song_info["artist"])
   end
 end
