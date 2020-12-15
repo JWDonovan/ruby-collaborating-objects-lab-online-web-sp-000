@@ -26,7 +26,7 @@ class Artist
     end
   end
 
-  def self.find_or_create_by_name(name)
+  def self.find(name)
     self.all.find do |artist|
       artist.name == name
     end
