@@ -37,8 +37,8 @@ class Artist
   end
 
   def self.print_songs
-    Song.all.select do |song|
-      song.artist == self
+    song.each do |song|
+      puts song
     end
   end
 end
